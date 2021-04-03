@@ -1,4 +1,4 @@
-local _G.Whitelist = {
+_G.Whitelist = {
 	[435600985] = true, --thekingfk11
 	[1344901318] = true,--1MrNpc (Cum Lord)
 	[2227622000] = true  --1mipz (Cum Lord)
