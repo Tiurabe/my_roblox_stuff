@@ -10,6 +10,7 @@ How to use:
 
 ]]
 
+print("By Tiurabe")
 
 --Variáveis
 plr = game:GetService("Players").LocalPlayer
@@ -61,4 +62,3 @@ while wait(0.4) do
 		control()
 	end
 end
-print("By Tiurabe")
