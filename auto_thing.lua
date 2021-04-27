@@ -17,6 +17,7 @@ plr = game:GetService("Players").LocalPlayer
 mouse = plr:GetMouse()
 _G.mast = false
 _G.blow = false
+_G.autothing = 1
 
 --Detectar as teclas
 mouse.KeyDown:connect(function(key)
