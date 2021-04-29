@@ -20,7 +20,7 @@ Frame.Name = "Frame"
 Frame.Parent = ScreenGui
 Frame.BackgroundColor3 = Color3.fromRGB(170, 0, 0)
 Frame.BackgroundTransparency = 1.000
-Frame.Position = UDim2.new(0.44803372, 0, 0.300796807, 0)
+Frame.Position = UDim2.new(0.0084269885, 0, 0.304780871, 0)
 Frame.Size = UDim2.new(0, 153, 0, 125)
 Frame.ZIndex = 3
 Frame.Image = "rbxassetid://3570695787"
@@ -127,6 +127,8 @@ TextButton_2.MouseButton1Click:Connect(function()
 		TextButton_2.Text = "Blowjob: OFF"
 	end
 end)
+
+--Sex
 
 while wait(0.4) do
 	if TextButton_2.Text == "Blowjob: ON" and iswindowactive() then
