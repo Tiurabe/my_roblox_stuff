@@ -1,6 +1,13 @@
+if not syn.request then
+	return print("Exploit not supported for the auto sex!")
+end
+
+
 print("Auto Sex Loaded! -- By: Tiurabe")
 
 _G.autothing = 1
+
+
 
 -- Instances:
 
