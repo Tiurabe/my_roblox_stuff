@@ -1,3 +1,11 @@
+if _G.version == nil then
+	return game.Players.LocalPlayer:Kick("Outdated Script! Contact Tiurabe")
+elseif _G.version < 1.1 then
+	print("Outdated Script! Contact Tiurabe")
+end
+
+wait()
+
 if not syn.request then
 	return print("Exploit not supported for the auto sex!")
 end
