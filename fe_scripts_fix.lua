@@ -1,3 +1,6 @@
+if _G.AlreadyRanScriptsFix1337 == true then
+    return
+end
 --Credits to whoever made this, got from mizt hub so probably made by them.
 local realfenv
 realfenv = hookfunction(getgenv().getfenv,function(a)
@@ -35,3 +38,4 @@ sethidden = hookfunction(getgenv().sethiddenproperty,function(i,p,v)
         sethidden(i,p,v)
     end
 end)
+_G.AlreadyRanScriptsFix1337 = true
