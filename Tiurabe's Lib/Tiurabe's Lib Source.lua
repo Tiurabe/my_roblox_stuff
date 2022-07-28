@@ -5,10 +5,10 @@ task.wait(0.2)
 
 local printconsole = printconsole or print;
 
-if (getgenv().TiurabeIntegrityCheck ~= nil) then
+if (getgenv().TiurabeDuplicatePrevention ~= nil) then
 	printconsole("It seems like you tried to run the script again, i stopped it for you.");
 	return;
-elseif (getgenv().TiurabeIntegrityCheck == false) then
+elseif (getgenv().TiurabeDuplicatePrevention == false) then
 	printconsole("It seems like the script has not been executed correctly. Attempting to run it again...")
 end
 
@@ -17,7 +17,7 @@ if (identifyexecutor():sub(1, 9) == "Synapse X") then
 end
 
 
-getgenv().TiurabeIntegrityCheck = false;
+getgenv().TiurabeDuplicatePrevention = false;
 getgenv().Constant = math.random(1, 100) .. os.clock() .. math.random(1, 100);
 
 getgenv().LocalPlayer = game:GetService("Players").LocalPlayer;
@@ -94,7 +94,7 @@ getgenv().ClearESPs = function()
 	getgenv().CurrentESPs = {};
 end
 
-getgenv().TiurabeIntegrityCheck = true;
+getgenv().TiurabeDuplicatePrevention = true;
 printconsole("The script have been loaded successfully.");
 printconsole("Funções: ");
 printconsole("CreateESP\(part\), isPlayer\(inputText, \(true/false\)\), isPartOfPlayer\(obj\)");
