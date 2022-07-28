@@ -12,10 +12,6 @@ elseif (getgenv().TiurabeDuplicatePrevention == false) then
 	printconsole("It seems like the script has not been executed correctly. Attempting to run it again...")
 end
 
-if (identifyexecutor():sub(1, 9) == "Synapse X") then
-	warn("--Warning: Unsupported exploit detected.\nThe script currently only supports SynapseX.\n I dont plan to add compatibility to any other exploit, and \n therefore there might be issues with the script.");
-end
-
 
 getgenv().TiurabeDuplicatePrevention = false;
 getgenv().Constant = math.random(1, 100) .. os.clock() .. math.random(1, 100);
@@ -95,8 +91,8 @@ getgenv().ClearESPs = function()
 end
 
 getgenv().TiurabeDuplicatePrevention = true;
-printconsole("The script have been loaded successfully.");
-printconsole("Funções: ");
+printconsole("The script have been loaded successfully! \nMade By: Tiurabe");
+printconsole("*Functions: ");
 printconsole("CreateESP\(part\), isPlayer\(inputText, \(true/false\)\), isPartOfPlayer\(obj\)");
-printconsole("Constants: ");
-printconsole("LocalPlayer, Players");
+printconsole("*Constants: ");
+printconsole("LocalPlayer, Players", "CoreGui");
