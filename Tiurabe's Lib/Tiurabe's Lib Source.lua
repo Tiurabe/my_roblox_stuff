@@ -95,4 +95,4 @@ printconsole("The script have been loaded successfully! \nMade By: Tiurabe");
 printconsole("*Functions: ");
 printconsole("CreateESP\(part\), isPlayer\(inputText, \(true/false\)\), isPartOfPlayer\(obj\)");
 printconsole("*Constants: ");
-printconsole("LocalPlayer, Players", "CoreGui");
+printconsole("LocalPlayer, Players, CoreGui");
