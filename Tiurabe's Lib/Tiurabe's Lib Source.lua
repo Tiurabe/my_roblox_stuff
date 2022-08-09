@@ -90,6 +90,17 @@ getgenv().ClearESPs = function()
 	getgenv().CurrentESPs = {};
 end
 
+-- ESP Maid
+task.spawn(function()
+    while task.wait(4) do
+        for i,v in pairs(CurrentESPs) do
+            if v.Adornee == nil then
+                v:Destroy()
+            end
+        end
+    end
+end)
+
 getgenv().TiurabeDuplicatePrevention = true;
 printconsole("The script have been loaded successfully! \nMade By: Tiurabe");
 printconsole("*Functions: ");
